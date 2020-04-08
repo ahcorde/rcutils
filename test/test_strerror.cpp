@@ -14,15 +14,14 @@
 
 #include <gtest/gtest.h>
 
-#include <string>
-
 #include <sys/types.h>
 #include <dirent.h>
+
+#include <string>
 
 #include "rcutils/strerror.h"
 
 TEST(test_strerror, get_error) {
-
   // cleaning possible errors
   errno = 0;
 
